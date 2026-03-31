@@ -66,8 +66,8 @@ int main() {
             "Hederlige Harrys Bilar",
             5000,
             {
-                {"Kop bil hos Harry", "scroll"},
-                {"En god bilaffar (for Harry!)", "text"},
+                {"Köp bil hos Harry", "scroll"},
+                {"En god bilaffär (för Harry!)", "text"},
                 {"Hederlige Harrys Bilar", "blink"}
             }
         },
@@ -75,31 +75,31 @@ int main() {
             "Farmor Ankas Pajer AB",
             3000,
             {
-                {"Kop paj hos Farmor Anka", "scroll"},
-                {"Skynda innan Marten atit alla pajer", "text"}
+                {"Köp paj hos Farmor Anka", "scroll"},
+                {"Skynda innan Marten ätit alla pajer", "text"}
             }
         },
         {
             "Svarte Petters Svartbyggen",
             1500,
             {
-                {"Lat Petter bygga at dig", "scroll"},
+                {"Låt Petter bygga at dig", "scroll"},
                 {"Bygga svart? Ring Petter", "text"}
             }
         },
         {
-            "Langbens detektivbyra",
+            "Långbens detektivbyra",
             4000,
             {
-                {"Mysterier? Ring Langben", "text"},
-                {"Langben fixar biffen", "text"}
+                {"Mysterier? Ring Långben", "text"},
+                {"Långben fixar biffen", "text"}
             }
         },
         {
-            "IOT:s Reklambyra",
+            "IOT:s Reklambyrå",
             1000,
             {
-                {"Synas har? IOT:s Reklambyra", "text"}
+                {"Synas här? IOT:s Reklambyrå", "text"}
             }
         }
     };
