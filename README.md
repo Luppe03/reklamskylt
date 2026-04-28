@@ -8,7 +8,7 @@ https://github.com/Luppe03/reklamskylt.git
 
 https://wokwi.com/projects/462094442698146817
 
----
+
 
 # Beskrivning
 
@@ -18,7 +18,6 @@ Systemet visar reklammeddelanden från olika kunder där varje kund har olika kr
 
 Reklamen visas direkt på LCD-skärmen och samma kund visas aldrig två gånger i rad.
 
----
 
 # Funktioner
 
@@ -49,14 +48,14 @@ Reklamen visas direkt på LCD-skärmen och samma kund visas aldrig två gånger 
 
 * Ett fast meddelande
 
----
+
 
 # Hårdvara
 
 * Arduino Uno
 * LCD 16x2 I2C
 
----
+
 
 # Kopplingar
 
@@ -67,7 +66,7 @@ Reklamen visas direkt på LCD-skärmen och samma kund visas aldrig två gånger 
 | SDA | A4          |
 | SCL | A5          |
 
----
+
 
 # Hur projektet fungerar
 
@@ -79,7 +78,7 @@ När en kund valts visas ett av kundens reklammeddelanden på LCD-displayen i 20
 
 Efter det väljs en ny kund.
 
----
+
 
 # Projektstruktur
 
@@ -91,7 +90,7 @@ reklamskylt/
 └── README.md
 ```
 
----
+
 
 # Slutsats
 
