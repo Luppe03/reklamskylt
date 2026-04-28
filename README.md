@@ -1,56 +1,100 @@
-#Reklamskylt
+# Reklamskylt
 
-#GIT:
-https://github.com/Luppe03/reklamskylt.git 
+## GitHub
 
-#WOKWI:
+https://github.com/Luppe03/reklamskylt.git
+
+## Wokwi
+
 https://wokwi.com/projects/462094442698146817
 
-#Beskrivning
-Den här uppgiften simulerar en digital reklamtavla som visar olika reklammeddelanden från flera kunder, där varje kund har olika krav på hur deras reklam ska visas samt att de har betalat olika mycket. Vilket påverkar hur ofta deras meddelanden kommer att visas.
+---
 
-Programmet är skrivet i C++ och körs i terminalen där utskriften ska representera reklamtavlan som kunden har beställt.
+# Beskrivning
 
-#Funktioner
-- Viktad slumpning baserat på hur mycket kunden har betalat.
-- Samma kund visas aldrig två gånger i rad.
-- Kundspecifika regler för visning:
-* Hederlige Harrys Bilar: slump mellan tre meddelanden
-* Farmor Ankas Pajer: slump mellan två meddelanden 
-* Svarte Petter: olika meddelanden beroende på jämn/ojämn minut 
-* Långben: slump mellan två meddelanden 
-* IOT:s Reklambyrå: ett meddelande
-Där varje reklamskylt visas i 20 sekunder
+Det här projektet simulerar en digital reklamskylt byggd med Arduino Uno och en 16x2 LCD-display.
 
-Programmet väljer en kund med hjälp av viktad slumpning där sannolikheten baseras på hur mycket kunden har betalat för sin reklamskylt. När en kund då valts så hämtas ett meddelande enligt kundens regler och skrivs ut i terminalen.
+Systemet visar reklammeddelanden från olika kunder där varje kund har olika krav på hur reklamen ska visas. Hur ofta reklamen visas baseras på hur mycket kunden har betalat.
 
-Kunden sparas för att säkerställa att samma kund inte visas två gånger i rad.
+Reklamen visas direkt på LCD-skärmen och samma kund visas aldrig två gånger i rad.
 
-#Kompilering:
-g++ main.cpp -o reklamskylt
+---
 
-./reklamskylt eller reklamskylt.exe
+# Funktioner
 
+* Viktad slumpning baserat på hur mycket kunden har betalat
+* Samma kund visas aldrig två gånger i rad
+* Reklam visas på LCD-display
+* Kundspecifika regler för visning
+
+## Kundregler
+
+### Hederlige Harrys Bilar
+
+* Slump mellan tre meddelanden
+
+### Farmor Ankas Pajer AB
+
+* Slump mellan två meddelanden
+
+### Svarte Petters Svartbyggen
+
+* Olika meddelanden beroende på jämn eller ojämn minut
+
+### Langbens detektivbyra
+
+* Slump mellan två meddelanden
+
+### IOT:s Reklambyra
+
+* Ett fast meddelande
+
+---
+
+# Hårdvara
+
+* Arduino Uno
+* LCD 16x2 I2C
+
+---
+
+# Kopplingar
+
+| LCD | Arduino Uno |
+| --- | ----------- |
+| GND | GND         |
+| VCC | 5V          |
+| SDA | A4          |
+| SCL | A5          |
+
+---
+
+# Hur projektet fungerar
+
+Programmet använder viktad slumpning för att välja vilken kunds reklam som ska visas.
+
+Sannolikheten baseras på hur mycket kunden har betalat.
+
+När en kund valts visas ett av kundens reklammeddelanden på LCD-displayen i 20 sekunder.
+
+Efter det väljs en ny kund.
+
+---
+
+# Projektstruktur
+
+```text
 reklamskylt/
-├── main.cpp
+├── sketch.ino
+├── diagram.json
+├── libraries.txt
 └── README.md
+```
 
-#Slutsats
-Projektet visar hur man kan bygga ett enkelt system för att hantera flera reklammeddelanden med olika prioritet. Lösningen uppfyller kraven genom att kombinera slumpning, regler samt enkel tidsstyrning.
+---
 
+# Slutsats
 
-#Kopplingsschema:
-![Kopplingsschema](kopplingsschema.png)
+Projektet visar hur ett embedded-system kan användas för att styra en digital reklamskylt med hjälp av Arduino och LCD-display.
 
-+----------------------+
-|      Dator (PC)      |
-|                      |
-|  C++ Program         |
-|  (main.cpp)          |
-+----------+-----------+
-           |
-           v
-+----------------------+
-|   Terminalfönster    |
-| (Simulerad skylt)    |
-+----------------------+
+Lösningen använder slumpning, prioritering och kundspecifika regler för att simulera ett enklare reklamsystem.
