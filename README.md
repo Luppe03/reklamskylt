@@ -4,7 +4,7 @@
 https://github.com/Luppe03/reklamskylt.git 
 
 #WOKWI:
-https://wokwi.com/projects/462094442698146817 
+https://wokwi.com/projects/462094442698146817
 
 #Beskrivning
 Den här uppgiften simulerar en digital reklamtavla som visar olika reklammeddelanden från flera kunder, där varje kund har olika krav på hur deras reklam ska visas samt att de har betalat olika mycket. Vilket påverkar hur ofta deras meddelanden kommer att visas.
